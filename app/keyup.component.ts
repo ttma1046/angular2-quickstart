@@ -22,6 +22,6 @@ export class KeyUpComponent_v1 {
   values = '';
 
   onKey(event: KeyboardEvent) {
-    this.values += (<HTMLInputElement>event.target).value + '|';
+    this.values += (<HTMLInputElement>event.target).value + ' | ';
   }
 }
