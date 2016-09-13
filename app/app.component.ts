@@ -18,6 +18,7 @@ import { Hero } from './hero';
         <click-me></click-me>
         <key-up></key-up>
         <loop-back></loop-back>
+        <hero-form></hero-form>
     `
 })
 export class AppComponent { 
