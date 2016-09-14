@@ -7,7 +7,7 @@ import { Hero } from './hero';
     selector: 'my-app',
     template: `
         <h1>{{title}}</h1>
-        <h2>My favorite hero is: {{myHero.name}}</h2>
+        <!--<h2>My favorite hero is: {{myHero.name}}</h2>
         <p>Heroes:</p>
         <ul>
             <li *ngFor='let hero of heroes'>
@@ -20,7 +20,7 @@ import { Hero } from './hero';
         <loop-back></loop-back>
         <key-up2></key-up2>
         <key-up3></key-up3>
-        <little-tour></little-tour>
+        <little-tour></little-tour>-->
         <hero-form></hero-form>
     `
 })
