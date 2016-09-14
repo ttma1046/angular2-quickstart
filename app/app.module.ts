@@ -11,6 +11,9 @@ import { KeyUpComponent_v4 } from './keyup.component.v4';
 import { LoopbackComponent } from './loop-back.component';
 import { HeroFormComponent } from './hero-form.component';
 import { LittleTourComponent } from './little-tour.component';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroListComponent } from './heroes/hero-list.component';
+import { Logger } from './logger.service';
 
 @NgModule({
   imports: [ 
@@ -26,8 +29,17 @@ import { LittleTourComponent } from './little-tour.component';
     KeyUpComponent_v4,
     LittleTourComponent,
     LoopbackComponent,
-    HeroFormComponent
+    HeroFormComponent,
+    HeroesComponent,
+    HeroListComponent
+  ],//,
+  providers: [Logger]
+  /*
+  providers: [
+    //UserService,
+    //{ provide: APP_CONFIG, useValue: HERO_DI_CONFIG }
   ],
+  */
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

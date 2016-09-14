@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ClickMeComponent } from './click-me.component';
 import { KeyUpComponent_v1 } from './keyup.component';
+import { HeroesComponent } from './heroes/heroes.component';
 import { Hero } from './hero';
 
 @Component({
@@ -22,6 +23,7 @@ import { Hero } from './hero';
         <key-up3></key-up3>
         <little-tour></little-tour>-->
         <hero-form></hero-form>
+        <my-heroes></my-heroes>
     `
 })
 export class AppComponent { 
