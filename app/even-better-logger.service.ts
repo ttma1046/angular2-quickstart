@@ -1,9 +1,10 @@
 import { Logger } from './logger.service';
 import { Injectable } from '@angular/core';
 
-import { UserService } from './user.service'
+import { UserService } from './user.service';
+
 @Injectable()
-class EvenBetterLogger extends Logger {
+export class EvenBetterLogger extends Logger {
     /**
      *
      */
@@ -12,6 +13,11 @@ class EvenBetterLogger extends Logger {
     }
 
     log(message: string) {
+        let silentLogger = {
+            logs: ['Silent logger says "Shhhhhh!". Provided via "useValue"'],
+            log: () => {}
+        };
+        
         let name = this.userService.user.name;
         super.log(
             `Message to ${name}: ${message}`

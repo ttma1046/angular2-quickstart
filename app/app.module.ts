@@ -14,6 +14,8 @@ import { LittleTourComponent } from './little-tour.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroListComponent } from './heroes/hero-list.component';
 import { Logger } from './logger.service';
+import { EvenBetterLogger } from './even-better-logger.service';
+import { UserService } from './user.service';
 
 @NgModule({
   imports: [ 
@@ -33,12 +35,17 @@ import { Logger } from './logger.service';
     HeroesComponent,
     HeroListComponent
   ],//,
-  providers: [Logger],
+  providers: [UserService],
+  //{provide: Logger, userClass:EvenBetterLogger}
   /*
   providers: [
     //UserService,
     //{ provide: APP_CONFIG, useValue: HERO_DI_CONFIG }
   ],
+  */
+  /*
+  [NewLogger, {provider: OldLogger, useClass: NewLogger}],
+  [NewLogger, {provide: OldLogger, useExisting: NewLogger}]
   */
   bootstrap: [ AppComponent ]
 })
