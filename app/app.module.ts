@@ -33,7 +33,7 @@ import { Logger } from './logger.service';
     HeroesComponent,
     HeroListComponent
   ],//,
-  providers: [Logger]
+  providers: [Logger],
   /*
   providers: [
     //UserService,
